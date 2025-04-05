@@ -3,14 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador JS</title>
+    <title>Simulador de Gestión de Usuarios</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Simulador de Gestión de Usuarios</h1>
-    <p>Este simulador permite gestionar una lista de usuarios mediante la consola de JavaScript. Puedes agregar, eliminar y buscar usuarios.</p>
-    
+    <div class="container">
+        <header>
+            <h1>Simulador de Gestión de Usuarios</h1>
+            <p>Este simulador permite gestionar una lista de usuarios.</p>
+        </header>
+
+        <main>
+            <section class="form-section">
+                <h2>Agregar Nuevo Usuario</h2>
+                <form id="userForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <button type="submit" id="btnAgregar">Agregar Usuario</button>
+                </form>
+            </section>
+
+            <section class="search-section">
+                <h2>Buscar Usuario</h2>
+                <div class="form-group">
+                    <input type="text" id="busqueda" placeholder="Buscar por nombre...">
+                    <button id="btnBuscar">Buscar</button>
+                </div>
+            </section>
+
+            <section class="users-section">
+                <h2>Lista de Usuarios</h2>
+                <div class="user-list-container">
+                    <table id="userTable">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Edad</th>
+                                <th>Email</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="userList">
+                            <!-- Aquí se mostrarán los usuarios -->
+                        </tbody>
+                    </table>
+                    <p id="noUsers" class="hidden">No hay usuarios registrados.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Simulador de gestión de usuarios desarrollado con JavaScript, HTML y CSS</p>
+        </footer>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
-
-

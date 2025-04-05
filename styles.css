@@ -1,0 +1,166 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+/* Secciones */
+section {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Formularios */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Tabla de usuarios */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Botones de acciones */
+.btn-editar {
+    background-color: #f39c12;
+    margin-right: 5px;
+}
+
+.btn-eliminar {
+    background-color: #e74c3c;
+}
+
+.btn-editar:hover {
+    background-color: #d35400;
+}
+
+.btn-eliminar:hover {
+    background-color: #c0392b;
+}
+
+/* Sección de búsqueda */
+.search-section .form-group {
+    display: flex;
+    gap: 10px;
+}
+
+.search-section input {
+    flex: 1;
+}
+
+/* Clases de utilidad */
+.hidden {
+    display: none;
+}
+
+.user-highlight {
+    background-color: #fffde7;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    color: #777;
+}
+
+/* Mensaje de no hay usuarios */
+#noUsers {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    button {
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    .search-section .form-group {
+        flex-direction: column;
+    }
+}
